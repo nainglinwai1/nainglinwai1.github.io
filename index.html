@@ -1,341 +1,805 @@
-<!DOCTYPE HTML>
-<!--
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Naing Lin Wai</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI Engineer & Computer Vision Specialist — Building intelligent systems for real business problems. Computer Vision, Edge AI, Robotics, Machine Learning.">
+    <meta name="keywords" content="AI Engineer, Computer Vision, Edge AI, Robotics, Machine Learning, PyTorch, TensorFlow, ONNX, TensorRT, Python, Freelance AI Developer">
+    <meta name="author" content="Naing Lin Wai">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Naing Lin Wai — AI Engineer & Computer Vision Specialist">
+    <meta property="og:description" content="Building AI Systems That Solve Real Business Problems. Computer Vision • Edge AI • Robotics • Machine Learning.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nainglinwai1.github.io">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Naing Lin Wai — AI Engineer">
+    <meta name="twitter:description" content="Building AI Systems That Solve Real Business Problems">
+    <link rel="canonical" href="https://nainglinwai1.github.io">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+    <title>Naing Lin Wai — AI Engineer | Computer Vision & Edge AI Specialist</title>
 
-				<!-- Header -->
-					<header id="header">
-						<div class="logo">
-							<span class="icon fa-gem"></span>
-						</div>
-						<div class="content">
-							<div class="inner">
-								<h1>NEO</h1>
-								<p>Portfolio Website by using the <a href="https://html5up.net/dimension">Dimension</a></p>
-							</div>
-						</div>
-						<nav>
-							<ul>
-								<li><a href="#intro">Intro</a></li>
-								<li><a href="#work">Work</a></li>
-								<li><a href="#about">About</a></li>
-								<li><a href="#contact">Contact</a></li>
-								<!--<li><a href="#elements">Elements</a></li>-->
-							</ul>
-						</nav>
-					</header>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="is-preload">
 
-				<!-- Main -->
-					<div id="main">
+    <!-- ==================== NAVIGATION ==================== -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo" aria-label="Home">
+                <span class="logo-text">NLW</span>
+                <span class="logo-dot"></span>
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="#blog" class="nav-link">Blog</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle theme">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
 
-						<!-- Intro -->
-							<article id="intro">
-								<h2 class="major">Intro</h2>
-								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
-								<p>Hello! I have been interested in Electrical Engineering since I had known the famous Nikola Tesla. From time to time I learn new things that appear interesting. I compete in the Robotics building challenge with my team during my senior year and got the prize for the most efficient robot. Currently, I have nothing to do in the education field. So, I teach kids basic electronics and math. </p>
-							</article>
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero" id="home">
+        <canvas id="particles-canvas" class="particles-canvas" aria-hidden="true"></canvas>
+        <div class="hero-gradient" aria-hidden="true"></div>
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge" data-aos="fade-up">
+                    <span class="badge-dot"></span>
+                    Available for Freelance & Consulting
+                </div>
+                <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+                    Building <span class="gradient-text">AI Systems</span> That Solve Real Business Problems
+                </h1>
+                <div class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+                    <span class="typing-text" id="typing-text"></span>
+                    <span class="typing-cursor">|</span>
+                </div>
+                <p class="hero-description" data-aos="fade-up" data-aos-delay="300">
+                    I design and deploy production-ready AI solutions — from computer vision systems on edge devices 
+                    to LLM-powered automation pipelines. Let's turn your AI vision into measurable business impact.
+                </p>
+                <div class="hero-buttons" data-aos="fade-up" data-aos-delay="400">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i> View Projects
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-handshake"></i> Hire Me
+                    </a>
+                </div>
+                <div class="hero-stats" data-aos="fade-up" data-aos-delay="500">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="15">0</span>
+                        <span class="stat-label">Projects Delivered</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="12">0</span>
+                        <span class="stat-label">Happy Clients</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="5">0</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image" data-aos="fade-left" data-aos-delay="300">
+                <div class="hero-image-wrapper">
+                    <div class="hero-image-placeholder">
+                        <div class="placeholder-avatar">
+                            <i class="fas fa-user-astronaut"></i>
+                        </div>
+                    </div>
+                    <div class="hero-image-glow" aria-hidden="true"></div>
+                    <div class="hero-floating-badge ai-badge" aria-hidden="true">
+                        <i class="fas fa-brain"></i> AI
+                    </div>
+                    <div class="hero-floating-badge cv-badge" aria-hidden="true">
+                        <i class="fas fa-eye"></i> CV
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+            <div class="mouse">
+                <div class="mouse-wheel"></div>
+            </div>
+            <div class="scroll-arrows">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </a>
+    </section>
 
-						<!-- Work -->
-							<article id="work">
-								<h2 class="major">Work</h2>
-								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-								<p>During my 4th year, I had done gruop project for IOT based agricultural system with raspberry pi and Flask framework. I had also done a binary classification for cat and dog and some interesting AI project such as, AI agent for games. All of my work are available on my <a href="https://github.com/nainglinwai1">github</a>. This is the current project I have been working on. Obsticle avoidence vehicle.</p>
-							</article>
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">About Me</span>
+                <h2 class="section-title">The Engineer Behind <span class="gradient-text">the AI</span></h2>
+                <p class="section-subtitle">Turning complex AI challenges into elegant, scalable solutions</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-image" data-aos="fade-right">
+                    <div class="about-image-placeholder">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="about-image-accent" aria-hidden="true"></div>
+                </div>
+                <div class="about-content" data-aos="fade-left">
+                    <h3>Hi, I'm <span class="gradient-text">Naing Lin Wai</span></h3>
+                    <p class="about-intro">
+                        I'm an AI Engineer with deep expertise in computer vision, edge AI deployment, 
+                        and robotics. I bridge the gap between cutting-edge research and practical 
+                        business applications — building systems that work in the real world, not just in notebooks.
+                    </p>
+                    <p>
+                        From optimizing YOLO models for NVIDIA Jetson devices to building end-to-end 
+                        industrial inspection pipelines, I specialize in making AI fast, reliable, 
+                        and deployable at the edge. My work spans retail analytics, manufacturing 
+                        quality control, smart surveillance, and autonomous robotics.
+                    </p>
+                    <div class="about-mission">
+                        <i class="fas fa-quote-left"></i>
+                        <p><em>My mission is to democratize AI by making it practical, accessible, and impactful for businesses of all sizes — not just tech giants.</em></p>
+                    </div>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Based in Mandalay, Myanmar</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Electrical Engineering Background</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-briefcase"></i>
+                            <span>5+ Years in AI & Robotics</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-globe"></i>
+                            <span>Remote-First, Global Clients</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-						<!-- About -->
-							<article id="about">
-								<h2 class="major">About</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-								<p>I was born in Mandalay, Myanmar. I love exploring new things and love to solve problem. I love to travel to the places with clear skies, beautiful mountains with nostalgic views. I love animals. This is the photo of the cute doggy not me.</p>
-							</article>
+    <!-- ==================== SKILLS SECTION ==================== -->
+    <section class="skills section" id="skills">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Skills & Technologies</span>
+                <h2 class="section-title">My Technical <span class="gradient-text">Arsenal</span></h2>
+                <p class="section-subtitle">Tools, frameworks, and technologies I use to build production AI systems</p>
+            </div>
+            <div class="skills-grid">
+                <!-- AI / Deep Learning -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="0">
+                    <div class="skill-header">
+                        <i class="fas fa-brain skill-icon"></i>
+                        <h3>AI & Deep Learning</h3>
+                    </div>
+                    <div class="skill-items">
+                        <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="PyTorch" loading="lazy" width="20" height="20"> PyTorch</span>
+                        <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow" loading="lazy" width="20" height="20"> TensorFlow</span>
+                        <span class="skill-tag"><i class="fas fa-eye"></i> OpenCV</span>
+                        <span class="skill-tag"><i class="fas fa-crosshairs"></i> YOLO</span>
+                        <span class="skill-tag"><i class="fas fa-microchip"></i> ONNX</span>
+                        <span class="skill-tag"><i class="fas fa-bolt"></i> TensorRT</span>
+                        <span class="skill-tag"><i class="fas fa-smile"></i> Hugging Face</span>
+                    </div>
+                </div>
+                <!-- Programming -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-header">
+                        <i class="fas fa-code skill-icon"></i>
+                        <h3>Programming</h3>
+                    </div>
+                    <div class="skill-items">
+                        <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" loading="lazy" width="20" height="20"> Python</span>
+                        <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" loading="lazy" width="20" height="20"> C++</span>
+                        <span class="skill-tag"><i class="fas fa-database"></i> SQL</span>
+                        <span class="skill-tag"><i class="fas fa-terminal"></i> Bash</span>
+                    </div>
+                </div>
+                <!-- Robotics -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-header">
+                        <i class="fas fa-robot skill-icon"></i>
+                        <h3>Robotics & Edge</h3>
+                    </div>
+                    <div class="skill-items">
+                        <span class="skill-tag"><i class="fas fa-cogs"></i> ROS2</span>
+                        <span class="skill-tag"><i class="fas fa-microchip"></i> Jetson</span>
+                        <span class="skill-tag"><i class="fas fa-raspberry-pi"></i> Raspberry Pi</span>
+                        <span class="skill-tag"><i class="fas fa-layer-group"></i> Hailo</span>
+                    </div>
+                </div>
+                <!-- Backend & DevOps -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-header">
+                        <i class="fas fa-server skill-icon"></i>
+                        <h3>Backend & DevOps</h3>
+                    </div>
+                    <div class="skill-items">
+                        <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="FastAPI" loading="lazy" width="20" height="20"> FastAPI</span>
+                        <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" loading="lazy" width="20" height="20"> Docker</span>
+                        <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" loading="lazy" width="20" height="20"> PostgreSQL</span>
+                        <span class="skill-tag"><i class="fas fa-plug"></i> REST APIs</span>
+                    </div>
+                </div>
+                <!-- Cloud & Infrastructure -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
+                    <div class="skill-header">
+                        <i class="fas fa-cloud skill-icon"></i>
+                        <h3>Cloud & Infrastructure</h3>
+                    </div>
+                    <div class="skill-items">
+                        <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/githubactions/githubactions-original.svg" alt="GitHub Actions" loading="lazy" width="20" height="20"> GitHub Actions</span>
+                        <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" loading="lazy" width="20" height="20"> Linux</span>
+                        <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" alt="AWS" loading="lazy" width="20" height="20"> AWS</span>
+                        <span class="skill-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" alt="GCP" loading="lazy" width="20" height="20"> GCP</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-						<!-- Contact -->
-							<article id="contact">
-								<h2 class="major">Contact</h2>
-								<p>Phone:  09400155974</p>
-								<p>Email:  mechine.nlw@gmail.com</p>
-								<ul class="icons">
-									<li><a href="https://twitter.com/Neo12062990" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="https://www.linkedin.com/in/naing-lin-wai/" class="icon brands fa-linkedin"><span class="label">linkedin</span></a></li>
-									<li><a href="https://github.com/nainglinwai1" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</article>
+    <!-- ==================== SERVICES SECTION ==================== -->
+    <section class="services section" id="services">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Services</span>
+                <h2 class="section-title">What I Can <span class="gradient-text">Build For You</span></h2>
+                <p class="section-subtitle">End-to-end AI development — from prototype to production deployment</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="service-icon"><i class="fas fa-camera-retro"></i></div>
+                    <h3>Custom Computer Vision</h3>
+                    <p>Bespoke object detection, image classification, segmentation, and OCR solutions tailored to your specific business needs — from retail to healthcare.</p>
+                    <ul class="service-deliverables">
+                        <li><i class="fas fa-check-circle"></i> Model development & fine-tuning</li>
+                        <li><i class="fas fa-check-circle"></i> Dataset preparation & annotation</li>
+                        <li><i class="fas fa-check-circle"></i> API integration & deployment</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon"><i class="fas fa-microchip"></i></div>
+                    <h3>Edge AI Deployment</h3>
+                    <p>Deploy optimized AI models on NVIDIA Jetson, Raspberry Pi, Hailo, and other edge devices. Achieve real-time inference with minimal power consumption.</p>
+                    <ul class="service-deliverables">
+                        <li><i class="fas fa-check-circle"></i> Model optimization (TensorRT, ONNX)</li>
+                        <li><i class="fas fa-check-circle"></i> Edge device configuration</li>
+                        <li><i class="fas fa-check-circle"></i> Performance benchmarking</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon"><i class="fas fa-robot"></i></div>
+                    <h3>AI Automation</h3>
+                    <p>Automate repetitive workflows with intelligent AI pipelines. Document processing, data extraction, quality inspection — let AI handle the mundane.</p>
+                    <ul class="service-deliverables">
+                        <li><i class="fas fa-check-circle"></i> Workflow analysis & design</li>
+                        <li><i class="fas fa-check-circle"></i> Custom automation scripts</li>
+                        <li><i class="fas fa-check-circle"></i> Integration with existing systems</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon"><i class="fas fa-cogs"></i></div>
+                    <h3>Robotics AI</h3>
+                    <p>Develop perception and decision-making systems for autonomous robots. ROS2 integration, sensor fusion, and real-time path planning.</p>
+                    <ul class="service-deliverables">
+                        <li><i class="fas fa-check-circle"></i> ROS2 node development</li>
+                        <li><i class="fas fa-check-circle"></i> Sensor integration & calibration</li>
+                        <li><i class="fas fa-check-circle"></i> Autonomous navigation</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>AI Consulting</h3>
+                    <p>Strategic guidance on AI adoption for your business. Technology selection, feasibility analysis, architecture design, and roadmap planning.</p>
+                    <ul class="service-deliverables">
+                        <li><i class="fas fa-check-circle"></i> Technical feasibility assessment</li>
+                        <li><i class="fas fa-check-circle"></i> Architecture recommendations</li>
+                        <li><i class="fas fa-check-circle"></i> Implementation roadmap</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-icon"><i class="fas fa-bolt"></i></div>
+                    <h3>Model Optimization</h3>
+                    <p>Make your AI models faster, smaller, and more efficient. Quantization, pruning, distillation, and hardware-specific optimization for production.</p>
+                    <ul class="service-deliverables">
+                        <li><i class="fas fa-check-circle"></i> Inference speed optimization</li>
+                        <li><i class="fas fa-check-circle"></i> Model size reduction</li>
+                        <li><i class="fas fa-check-circle"></i> Hardware-specific tuning</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service-icon"><i class="fas fa-language"></i></div>
+                    <h3>LLM Integration</h3>
+                    <p>Integrate large language models into your products. RAG pipelines, chatbots, document Q&A, and custom fine-tuning for domain-specific applications.</p>
+                    <ul class="service-deliverables">
+                        <li><i class="fas fa-check-circle"></i> RAG pipeline development</li>
+                        <li><i class="fas fa-check-circle"></i> Custom chatbot solutions</li>
+                        <li><i class="fas fa-check-circle"></i> Fine-tuning & deployment</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="700">
+                    <div class="service-icon"><i class="fas fa-industry"></i></div>
+                    <h3>Industrial AI Solutions</h3>
+                    <p>AI-powered quality control, predictive maintenance, and process optimization for manufacturing. Reduce defects, downtime, and operational costs.</p>
+                    <ul class="service-deliverables">
+                        <li><i class="fas fa-check-circle"></i> Defect detection systems</li>
+                        <li><i class="fas fa-check-circle"></i> Predictive maintenance models</li>
+                        <li><i class="fas fa-check-circle"></i> Real-time monitoring dashboards</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-						<!-- Elements -->
-							<article id="elements">
-								<h2 class="major">Elements</h2>
+    <!-- ==================== PROJECTS SECTION ==================== -->
+    <section class="projects section" id="projects">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Featured Projects</span>
+                <h2 class="section-title">Proven <span class="gradient-text">Results</span></h2>
+                <p class="section-subtitle">Real-world AI deployments that deliver measurable business impact</p>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1: Smart CCTV AI -->
+                <article class="project-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">
+                            <i class="fas fa-video"></i>
+                            <span>Smart CCTV AI</span>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="projects/smart-cctv-ai.html" class="btn btn-sm">View Case Study</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Smart CCTV AI</h3>
+                        <p>Real-time anomaly detection and behavior analysis for security surveillance systems using edge-optimized deep learning.</p>
+                        <div class="project-tech">
+                            <span>YOLOv8</span><span>TensorRT</span><span>Jetson Orin</span><span>DeepStream</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="projects/smart-cctv-ai.html" class="btn-link">Case Study <i class="fas fa-arrow-right"></i></a>
+                            <a href="#" class="btn-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="#" class="btn-icon" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </article>
+                <!-- Project 2: Retail Analytics -->
+                <article class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">
+                            <i class="fas fa-store"></i>
+                            <span>Retail Analytics</span>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="projects/retail-analytics.html" class="btn btn-sm">View Case Study</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Retail Analytics</h3>
+                        <p>AI-powered customer behavior analysis, footfall tracking, and heatmap generation for retail stores.</p>
+                        <div class="project-tech">
+                            <span>PyTorch</span><span>OpenCV</span><span>FastAPI</span><span>PostgreSQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="projects/retail-analytics.html" class="btn-link">Case Study <i class="fas fa-arrow-right"></i></a>
+                            <a href="#" class="btn-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="#" class="btn-icon" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </article>
+                <!-- Project 3: Factory Defect Detection -->
+                <article class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">
+                            <i class="fas fa-industry"></i>
+                            <span>Factory Defect Detection</span>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="projects/factory-defect-detection.html" class="btn btn-sm">View Case Study</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Factory Defect Detection</h3>
+                        <p>Automated visual inspection system for manufacturing quality control with 99.2% accuracy.</p>
+                        <div class="project-tech">
+                            <span>YOLOv8</span><span>ONNX</span><span>Docker</span><span>REST API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="projects/factory-defect-detection.html" class="btn-link">Case Study <i class="fas fa-arrow-right"></i></a>
+                            <a href="#" class="btn-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="#" class="btn-icon" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </article>
+                <!-- Project 4: Edge AI Deployment -->
+                <article class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">
+                            <i class="fas fa-microchip"></i>
+                            <span>Edge AI Deployment</span>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="projects/edge-ai-deployment.html" class="btn btn-sm">View Case Study</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Edge AI Deployment</h3>
+                        <p>Optimized computer vision pipeline on NVIDIA Jetson achieving 60 FPS real-time inference at the edge.</p>
+                        <div class="project-tech">
+                            <span>TensorRT</span><span>ONNX</span><span>Jetson</span><span>C++</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="projects/edge-ai-deployment.html" class="btn-link">Case Study <i class="fas fa-arrow-right"></i></a>
+                            <a href="#" class="btn-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="#" class="btn-icon" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </article>
+                <!-- Project 5: AI Document Assistant -->
+                <article class="project-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">
+                            <i class="fas fa-file-alt"></i>
+                            <span>AI Document Assistant</span>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="projects/ai-document-assistant.html" class="btn btn-sm">View Case Study</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>AI Document Assistant</h3>
+                        <p>LLM-powered document Q&A system with RAG pipeline for intelligent document understanding and retrieval.</p>
+                        <div class="project-tech">
+                            <span>LangChain</span><span>HuggingFace</span><span>FastAPI</span><span>ChromaDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="projects/ai-document-assistant.html" class="btn-link">Case Study <i class="fas fa-arrow-right"></i></a>
+                            <a href="#" class="btn-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="#" class="btn-icon" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </article>
+                <!-- Project 6: Industrial Vision Inspection -->
+                <article class="project-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">
+                            <i class="fas fa-search-plus"></i>
+                            <span>Industrial Vision Inspection</span>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="projects/industrial-vision.html" class="btn btn-sm">View Case Study</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Industrial Vision Inspection</h3>
+                        <p>Multi-camera synchronized inspection system for high-speed production lines with real-time defect classification.</p>
+                        <div class="project-tech">
+                            <span>OpenCV</span><span>PyTorch</span><span>ROS2</span><span>Docker</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="projects/industrial-vision.html" class="btn-link">Case Study <i class="fas fa-arrow-right"></i></a>
+                            <a href="#" class="btn-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="#" class="btn-icon" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
 
-								<section>
-									<h3 class="major">Text</h3>
-									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-									<hr />
-									<h2>Heading Level 2</h2>
-									<h3>Heading Level 3</h3>
-									<h4>Heading Level 4</h4>
-									<h5>Heading Level 5</h5>
-									<h6>Heading Level 6</h6>
-									<hr />
-									<h4>Blockquote</h4>
-									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-									<h4>Preformatted</h4>
-									<pre><code>i = 0;
+    <!-- ==================== EXPERIENCE SECTION ==================== -->
+    <section class="experience section" id="experience">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Experience</span>
+                <h2 class="section-title">My Professional <span class="gradient-text">Journey</span></h2>
+                <p class="section-subtitle">A timeline of growth, learning, and impactful projects</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-line" aria-hidden="true"></div>
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-marker"><i class="fas fa-briefcase"></i></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024 — Present</span>
+                        <h3>AI Engineer</h3>
+                        <span class="timeline-company">Freelance & Consulting</span>
+                        <p>Delivering end-to-end AI solutions for clients worldwide. Specializing in computer vision, edge AI deployment, and LLM integration. Built systems for retail analytics, industrial inspection, and smart surveillance.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-marker"><i class="fas fa-robot"></i></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2022 — 2024</span>
+                        <h3>Robotics Projects</h3>
+                        <span class="timeline-company">Independent Research & Development</span>
+                        <p>Designed and built autonomous robotics systems including obstacle avoidance vehicles and IoT-based agricultural monitoring. Won prize for most efficient robot in university competition. Integrated ROS2, Raspberry Pi, and computer vision.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-marker"><i class="fas fa-flask"></i></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2020 — 2022</span>
+                        <h3>Research Projects</h3>
+                        <span class="timeline-company">University Research Lab</span>
+                        <p>Conducted research in deep learning applications for computer vision. Implemented binary classification models for image recognition. Developed AI agents for game playing using reinforcement learning. Built IoT-based agricultural monitoring system with Flask.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-marker"><i class="fas fa-graduation-cap"></i></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2019 — 2023</span>
+                        <h3>Electrical Engineering</h3>
+                        <span class="timeline-company">Bachelor's Degree</span>
+                        <p>Foundation in electrical engineering, electronics, and embedded systems. Developed passion for AI and robotics through hands-on projects and competitions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-while (!deck.isInOrder()) {
-    print 'Iteration ' + i;
-    deck.shuffle();
-    i++;
-}
+    <!-- ==================== TESTIMONIALS SECTION ==================== -->
+    <section class="testimonials section" id="testimonials">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Testimonials</span>
+                <h2 class="section-title">What Clients <span class="gradient-text">Say</span></h2>
+                <p class="section-subtitle">Feedback from clients and collaborators I've worked with</p>
+            </div>
+            <div class="testimonials-carousel" id="testimonials-carousel">
+                <div class="testimonial-track" id="testimonial-track">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Exceptional work on our computer vision system. The edge deployment optimization was beyond our expectations — real-time inference at 60 FPS on Jetson hardware. Highly recommended for any AI project."</p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar"><i class="fas fa-user-tie"></i></div>
+                            <div>
+                                <h4>Alex Chen</h4>
+                                <span>CTO, TechVision Solutions</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Delivered a production-ready defect detection system that reduced our manufacturing error rate by 85%. Deep understanding of both AI and the practical constraints of industrial deployment."</p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar"><i class="fas fa-user-tie"></i></div>
+                            <div>
+                                <h4>Sarah Martinez</h4>
+                                <span>Plant Manager, Precision Manufacturing Co.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"The retail analytics solution transformed how we understand customer behavior. The heatmap visualizations and footfall tracking gave us actionable insights that directly increased sales."</p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar"><i class="fas fa-user-tie"></i></div>
+                            <div>
+                                <h4>Michael Park</h4>
+                                <span>CEO, RetailNext Analytics</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-controls">
+                    <button class="testimonial-btn prev" id="testimonial-prev" aria-label="Previous testimonial"><i class="fas fa-chevron-left"></i></button>
+                    <div class="testimonial-dots" id="testimonial-dots"></div>
+                    <button class="testimonial-btn next" id="testimonial-next" aria-label="Next testimonial"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
 
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-								</section>
+    <!-- ==================== BLOG SECTION ==================== -->
+    <section class="blog section" id="blog">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Blog & Insights</span>
+                <h2 class="section-title">Latest <span class="gradient-text">Articles</span></h2>
+                <p class="section-subtitle">Thoughts, tutorials, and deep dives on AI engineering</p>
+            </div>
+            <div class="blog-grid">
+                <article class="blog-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="blog-image">
+                        <div class="blog-image-placeholder"><i class="fas fa-eye"></i></div>
+                        <span class="blog-category">Computer Vision</span>
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">July 2026</span>
+                        <h3>Optimizing YOLO Models for Edge Devices: A Practical Guide</h3>
+                        <p>Learn how to achieve real-time object detection on embedded hardware with TensorRT and ONNX optimization techniques.</p>
+                        <a href="#" class="btn-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="blog-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="blog-image">
+                        <div class="blog-image-placeholder"><i class="fas fa-robot"></i></div>
+                        <span class="blog-category">Robotics</span>
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">June 2026</span>
+                        <h3>Building Autonomous Robots with ROS2 and Computer Vision</h3>
+                        <p>A step-by-step guide to integrating perception systems with ROS2 for autonomous navigation.</p>
+                        <a href="#" class="btn-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="blog-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="blog-image">
+                        <div class="blog-image-placeholder"><i class="fas fa-microchip"></i></div>
+                        <span class="blog-category">Edge AI</span>
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">May 2026</span>
+                        <h3>Edge AI in 2026: Jetson Orin vs Hailo vs Raspberry Pi AI Kit</h3>
+                        <p>Comprehensive comparison of edge AI hardware platforms for production deployment.</p>
+                        <a href="#" class="btn-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
 
-								<section>
-									<h3 class="major">Lists</h3>
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Contact</span>
+                <h2 class="section-title">Let's <span class="gradient-text">Work Together</span></h2>
+                <p class="section-subtitle">Have an AI project in mind? Let's discuss how I can help.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info" data-aos="fade-right">
+                    <h3>Get In Touch</h3>
+                    <p>I'm currently available for freelance projects and consulting engagements. Whether you need a complete AI system built from scratch or optimization of existing models — I'd love to hear about your project.</p>
+                    <div class="contact-details">
+                        <a href="mailto:mechine.nlw@gmail.com" class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <span>Email</span>
+                                <strong>mechine.nlw@gmail.com</strong>
+                            </div>
+                        </a>
+                        <a href="https://linkedin.com/in/naing-lin-wai" target="_blank" rel="noopener" class="contact-item">
+                            <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+                            <div>
+                                <span>LinkedIn</span>
+                                <strong>linkedin.com/in/naing-lin-wai</strong>
+                            </div>
+                        </a>
+                        <a href="https://github.com/nainglinwai1" target="_blank" rel="noopener" class="contact-item">
+                            <div class="contact-icon"><i class="fab fa-github"></i></div>
+                            <div>
+                                <span>GitHub</span>
+                                <strong>github.com/nainglinwai1</strong>
+                            </div>
+                        </a>
+                        <a href="#" class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-file-pdf"></i></div>
+                            <div>
+                                <span>Resume</span>
+                                <strong>Download PDF</strong>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper" data-aos="fade-left">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="john@company.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="AI Project Inquiry">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Project Details</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project, requirements, and timeline..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                        <p class="form-note">This form is for display only. Please email me directly at <a href="mailto:mechine.nlw@gmail.com">mechine.nlw@gmail.com</a>.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
-									<h4>Unordered</h4>
-									<ul>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#home" class="footer-logo">
+                        <span class="logo-text">NLW</span>
+                        <span class="logo-dot"></span>
+                    </a>
+                    <p>AI Engineer specializing in computer vision, edge AI, and robotics. Building intelligent systems that solve real business problems.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>More</h4>
+                    <ul>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Resume</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect</h4>
+                    <div class="social-icons">
+                        <a href="https://github.com/nainglinwai1" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/naing-lin-wai" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://twitter.com/Neo12062990" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="mailto:mechine.nlw@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Naing Lin Wai. All rights reserved.</p>
+                <p>Crafted with <i class="fas fa-heart"></i> using HTML, CSS & Vanilla JS</p>
+            </div>
+        </div>
+    </footer>
 
-									<h4>Alternate</h4>
-									<ul class="alt">
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
+    <!-- ==================== BACK TO TOP ==================== -->
+    <a href="#home" class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
 
-									<h4>Ordered</h4>
-									<ol>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis viverra.</li>
-										<li>Felis enim feugiat.</li>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis lorem.</li>
-										<li>Felis enim et feugiat.</li>
-									</ol>
-									<h4>Icons</h4>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="'fa fa-linkedin-square"><span class="label">Instagram</span></a></li>
-										<li><a href="https://github.com/nainglinwai1" class="icon brands fa-github"><span class="label">Github</span></a></li>
-									</ul>
-
-									<h4>Actions</h4>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-								</section>
-
-								<section>
-									<h3 class="major">Table</h3>
-									<h4>Default</h4>
-									<div class="table-wrapper">
-										<table>
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-
-									<h4>Alternate</h4>
-									<div class="table-wrapper">
-										<table class="alt">
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-								</section>
-
-								<section>
-									<h3 class="major">Buttons</h3>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Primary</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button">Default</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-									</ul>
-									<ul class="actions">
-										<li><span class="button primary disabled">Disabled</span></li>
-										<li><span class="button disabled">Disabled</span></li>
-									</ul>
-								</section>
-
-								<section>
-									<h3 class="major">Form</h3>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="demo-name">Name</label>
-												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
-											</div>
-											<div class="field half">
-												<label for="demo-email">Email</label>
-												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
-											</div>
-											<div class="field">
-												<label for="demo-category">Category</label>
-												<select name="demo-category" id="demo-category">
-													<option value="">-</option>
-													<option value="1">Manufacturing</option>
-													<option value="1">Shipping</option>
-													<option value="1">Administration</option>
-													<option value="1">Human Resources</option>
-												</select>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-												<label for="demo-priority-low">Low</label>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-high" name="demo-priority">
-												<label for="demo-priority-high">High</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-copy" name="demo-copy">
-												<label for="demo-copy">Email me a copy</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-human" name="demo-human" checked>
-												<label for="demo-human">Not a robot</label>
-											</div>
-											<div class="field">
-												<label for="demo-message">Message</label>
-												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</form>
-								</section>
-
-							</article>
-
-					</div>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-					</footer>
-
-			</div>
-
-		<!-- BG -->
-			<div id="bg"></div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+    <!-- ==================== SCRIPTS ==================== -->
+    <script src="js/main.js"></script>
+</body>
 </html>

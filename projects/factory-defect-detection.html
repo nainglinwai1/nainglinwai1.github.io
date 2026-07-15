@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Factory Defect Detection — Automated visual inspection system for manufacturing quality control with 99.2% accuracy using YOLOv8 and ONNX.">
+    <title>Factory Defect Detection — Project Case Study | Naing Lin Wai</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .project-hero{min-height:60vh;display:flex;align-items:center;padding:120px 0 60px;position:relative;overflow:hidden}
+        .project-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 30% 50%,rgba(0,212,255,0.08) 0%,transparent 60%)}
+        .project-breadcrumb{display:flex;align-items:center;gap:8px;font-size:.85rem;color:var(--text-muted);margin-bottom:20px}
+        .project-breadcrumb a{color:var(--color-cyan-accent)}
+        .project-hero h1{font-size:clamp(2rem,4vw,3rem);font-weight:900;margin-bottom:16px;line-height:1.2}
+        .project-hero .subtitle{font-size:1.15rem;color:var(--text-secondary);max-width:600px;margin-bottom:28px}
+        .project-meta{display:flex;flex-wrap:wrap;gap:32px}
+        .project-meta-item{display:flex;flex-direction:column;gap:4px}
+        .project-meta-item span:first-child{font-size:.75rem;text-transform:uppercase;letter-spacing:.1em;color:var(--text-muted)}
+        .project-meta-item span:last-child{font-weight:600;color:var(--text-primary)}
+        .project-section{padding:80px 0}
+        .project-section h2{font-size:1.8rem;font-weight:800;margin-bottom:24px}
+        .project-section h3{font-size:1.3rem;font-weight:700;margin-bottom:12px;margin-top:32px}
+        .project-section p,.project-section li{color:var(--text-secondary);line-height:1.8;margin-bottom:16px}
+        .project-section ul{padding-left:20px}
+        .architecture-placeholder{width:100%;min-height:300px;background:var(--bg-card);border:2px dashed var(--border-color);border-radius:var(--radius-lg);display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--text-muted);gap:12px;margin:32px 0}
+        .architecture-placeholder i{font-size:3rem;color:var(--color-cyan-accent);opacity:.3}
+        .results-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:20px;margin:32px 0}
+        .result-card{text-align:center;padding:24px;background:var(--bg-card);border:1px solid var(--border-color);border-radius:var(--radius-md)}
+        .result-card .result-number{font-size:2.2rem;font-weight:800;background:var(--gradient-primary);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;display:block}
+        .result-card .result-label{font-size:.85rem;color:var(--text-muted);display:block;margin-top:4px}
+        .tech-stack{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0}
+        .tech-badge{padding:8px 18px;font-size:.85rem;font-weight:500;background:rgba(0,212,255,0.06);color:var(--color-cyan-accent);border:1px solid var(--border-accent);border-radius:100px}
+        .project-links-bar{display:flex;flex-wrap:wrap;gap:16px;margin-top:40px;padding-top:32px;border-top:1px solid var(--border-color)}
+    </style>
+</head>
+<body class="is-preload">
+
+<nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <a href="../index.html" class="nav-logo"><span class="logo-text">NLW</span><span class="logo-dot"></span></a>
+        <ul class="nav-links">
+            <li><a href="../index.html#home" class="nav-link">Home</a></li>
+            <li><a href="../index.html#projects" class="nav-link active">Projects</a></li>
+            <li><a href="../index.html#services" class="nav-link">Services</a></li>
+            <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme"><i class="fas fa-sun"></i><i class="fas fa-moon"></i></button>
+        </div>
+    </div>
+</nav>
+
+<section class="project-hero">
+    <div class="container">
+        <div class="project-breadcrumb">
+            <a href="../index.html">Home</a> <i class="fas fa-chevron-right"></i>
+            <a href="../index.html#projects">Projects</a> <i class="fas fa-chevron-right"></i>
+            <span>Factory Defect Detection</span>
+        </div>
+        <h1>Factory <span class="gradient-text">Defect Detection</span></h1>
+        <p class="subtitle">Automated visual inspection system for manufacturing quality control with 99.2% accuracy — reducing defect escape rate by 85%.</p>
+        <div class="project-meta">
+            <div class="project-meta-item"><span>Client</span><span>Precision Manufacturing Co.</span></div>
+            <div class="project-meta-item"><span>Duration</span><span>5 Months</span></div>
+            <div class="project-meta-item"><span>Role</span><span>Lead AI Engineer</span></div>
+        </div>
+    </div>
+</section>
+
+<section class="project-section">
+    <div class="container">
+        <h2>The Problem</h2>
+        <p>A precision manufacturing facility was experiencing a 3.2% defect escape rate with manual visual inspection — costing approximately $1.2M annually in returns and rework. Human inspectors could only sample 15% of products due to production line speed constraints, and fatigue led to inconsistent quality judgments.</p>
+
+        <h2>The Solution</h2>
+        <p>I developed an automated visual inspection system using YOLOv8 for defect detection and classification, deployed as a Docker-based microservice integrated directly into the production line. The system inspects 100% of products at line speed (120 units/minute) and classifies defects into 12 categories including scratches, dents, misalignments, and surface contamination.</p>
+
+        <div class="architecture-placeholder">
+            <i class="fas fa-project-diagram"></i>
+            <span>Architecture Diagram — Automated Visual Inspection Pipeline</span>
+            <small>[Placeholder — Replace with actual architecture diagram]</small>
+        </div>
+
+        <h2>Technologies Used</h2>
+        <div class="tech-stack">
+            <span class="tech-badge">YOLOv8</span><span class="tech-badge">ONNX</span><span class="tech-badge">Docker</span><span class="tech-badge">REST API</span>
+            <span class="tech-badge">Python</span><span class="tech-badge">OpenCV</span><span class="tech-badge">PostgreSQL</span><span class="tech-badge">Grafana</span>
+        </div>
+
+        <h2>Key Challenges</h2>
+        <ul>
+            <li><strong>High-Speed Inspection:</strong> Engineered a pipeline that processes 120 units/minute with <100ms inference latency per unit using ONNX-optimized models.</li>
+            <li><strong>Defect Class Imbalance:</strong> Addressed severe class imbalance (some defects occur in <0.1% of units) using focal loss and synthetic data augmentation.</li>
+            <li><strong>Production Integration:</strong> Designed a non-blocking inspection microservice that interfaces with PLC controllers for automatic rejection of defective units.</li>
+            <li><strong>Model Drift Monitoring:</strong> Implemented automated drift detection with weekly model retraining triggers to maintain accuracy as product lines evolve.</li>
+        </ul>
+
+        <h2>Results</h2>
+        <div class="results-grid">
+            <div class="result-card"><span class="result-number">85%</span><span class="result-label">Defect Escape Reduction</span></div>
+            <div class="result-card"><span class="result-number">99.2%</span><span class="result-label">Detection Accuracy</span></div>
+            <div class="result-card"><span class="result-number">120/min</span><span class="result-label">Inspection Speed</span></div>
+            <div class="result-card"><span class="result-number">$1.2M</span><span class="result-label">Annual Savings</span></div>
+        </div>
+
+        <div class="project-links-bar">
+            <a href="#" class="btn btn-primary"><i class="fab fa-github"></i> View on GitHub</a>
+            <a href="#" class="btn btn-secondary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            <a href="../index.html#projects" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> Back to Projects</a>
+        </div>
+    </div>
+</section>
+
+<footer class="footer"><div class="container"><div class="footer-bottom" style="border-top:none;padding-top:0"><p>&copy; 2026 Naing Lin Wai. All rights reserved.</p></div></div></footer>
+
+<script>
+    (function(){
+        var t=document.getElementById('theme-toggle');
+        if(t){t.addEventListener('click',function(){var h=document.documentElement;var c=h.getAttribute('data-theme');var n=c==='dark'?'light':'dark';h.setAttribute('data-theme',n);localStorage.setItem('theme',n)})}
+        var s=localStorage.getItem('theme');if(s)document.documentElement.setAttribute('data-theme',s);
+        setTimeout(function(){document.body.classList.remove('is-preload')},100);
+    })();
+</script>
+</body>
+</html>
