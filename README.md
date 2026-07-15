@@ -188,7 +188,7 @@ MIT License — feel free to use this template for your own portfolio.
 
 ## 🙋‍♂️ Questions?
 
-Open an issue or reach out at [mechine.nlw@gmail.com](mailto:mechine.nlw@gmail.com).
+Open an issue or reach out at [mechine.nlw@gmail.com](mailto:machine.nainglin@gmail.com).
 
 ---
 
