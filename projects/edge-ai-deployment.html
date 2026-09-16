@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Edge AI Deployment — Optimized computer vision pipeline on NVIDIA Jetson achieving 60 FPS real-time inference using TensorRT and ONNX.">
+    <meta name="description" content="Edge AI Deployment — Optimized computer vision pipeline for NVIDIA Jetson using TensorRT and ONNX acceleration.">
     <title>Edge AI Deployment — Project Case Study | Naing Lin Wai</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -60,22 +60,23 @@
             <span>Edge AI Deployment</span>
         </div>
         <h1>Edge <span class="gradient-text">AI Deployment</span></h1>
-        <p class="subtitle">Optimized computer vision pipeline on NVIDIA Jetson achieving 60 FPS real-time inference — a 4x improvement over baseline using TensorRT and ONNX.</p>
+        <p class="subtitle">Optimized computer vision pipeline for NVIDIA Jetson using TensorRT and ONNX to accelerate on-device inference.</p>
         <div class="project-meta">
-            <div class="project-meta-item"><span>Client</span><span>TechVision Solutions</span></div>
-            <div class="project-meta-item"><span>Duration</span><span>3 Months</span></div>
-            <div class="project-meta-item"><span>Role</span><span>Edge AI Specialist</span></div>
+            <div class="project-meta-item"><span>Type</span><span>Portfolio Project</span></div>
+            <div class="project-meta-item"><span>Scope</span><span>Optimization Study</span></div>
+            <div class="project-meta-item"><span>Role</span><span>AI Engineer</span></div>
         </div>
     </div>
 </section>
 
 <section class="project-section">
     <div class="container">
+        <p class="project-note" style="padding:16px 20px;border-left:3px solid var(--color-cyan-accent);background:var(--bg-card);border-radius:8px;margin-bottom:24px;"><i class="fas fa-info-circle"></i> <em>Self-directed portfolio project demonstrating production-grade AI delivery. Not a paid client engagement.</em></p>
         <h2>The Problem</h2>
-        <p>TechVision Solutions had a computer vision application running at 15 FPS on NVIDIA Jetson Xavier NX — too slow for their real-time requirements. Cloud offloading was not viable due to intermittent connectivity at deployment sites. They needed on-device inference at 60 FPS without hardware upgrades.</p>
+        <p>Computer vision models often run too slowly on edge hardware such as Jetson or Raspberry Pi for real-time use, and cloud offloading isn't always viable due to connectivity or privacy. On-device acceleration is essential.</p>
 
         <h2>The Solution</h2>
-        <p>I performed a comprehensive optimization of their entire inference pipeline: migrated models from PyTorch to TensorRT with FP16 precision, implemented custom CUDA pre/post-processing kernels, designed a zero-copy frame buffer using DMA, and optimized the GStreamer pipeline for minimal latency. The result: 60 FPS sustained inference on the same hardware.</p>
+        <p>I applied a systematic optimization workflow: exporting models to ONNX, converting to TensorRT with FP16 precision, and tuning the video pipeline for minimal latency. This demonstrates how to make on-device inference fast without changing hardware.</p>
 
         <div class="architecture-placeholder">
             <i class="fas fa-project-diagram"></i>
@@ -91,18 +92,18 @@
 
         <h2>Key Challenges</h2>
         <ul>
-            <li><strong>Model Conversion:</strong> Several custom PyTorch ops had no direct TensorRT equivalents — implemented custom plugin layers in CUDA.</li>
-            <li><strong>Memory Bandwidth:</strong> Optimized memory access patterns to maximize Jetson's shared memory architecture, achieving 3.2x memory throughput improvement.</li>
-            <li><strong>Pipeline Parallelism:</strong> Designed a multi-stream pipeline where pre-processing, inference, and post-processing run concurrently across CUDA streams.</li>
-            <li><strong>Thermal Management:</strong> Tuned DVFS (Dynamic Voltage Frequency Scaling) settings to sustain peak performance without thermal throttling.</li>
+            <li><strong>Model Conversion:</strong> Worked through PyTorch ops that lack direct TensorRT equivalents using custom plugin layers.</li>
+            <li><strong>Memory Bandwidth:</strong> Optimized memory access patterns for Jetson's shared memory architecture.</li>
+            <li><strong>Pipeline Parallelism:</strong> Designed a multi-stream pipeline so pre-processing, inference, and post-processing run concurrently.</li>
+            <li><strong>Thermal Management:</strong> Tuned DVFS settings to sustain performance without thermal throttling.</li>
         </ul>
 
-        <h2>Results</h2>
+        <h2>Project Highlights</h2>
         <div class="results-grid">
-            <div class="result-card"><span class="result-number">4x</span><span class="result-label">Speed Improvement</span></div>
-            <div class="result-card"><span class="result-number">60 FPS</span><span class="result-label">Sustained Inference</span></div>
-            <div class="result-card"><span class="result-number">3.2x</span><span class="result-label">Memory Throughput</span></div>
-            <div class="result-card"><span class="result-number">0</span><span class="result-label">Hardware Changes</span></div>
+            <div class="result-card"><span class="result-number">TensorRT</span><span class="result-label">Optimized Inference</span></div>
+            <div class="result-card"><span class="result-number">FP16</span><span class="result-label">Quantization</span></div>
+            <div class="result-card"><span class="result-number">ONNX</span><span class="result-label">Model Export</span></div>
+            <div class="result-card"><span class="result-number">Offline</span><span class="result-label">No Cloud Required</span></div>
         </div>
 
         <div class="project-links-bar">

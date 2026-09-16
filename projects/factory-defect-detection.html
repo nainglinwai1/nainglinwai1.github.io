@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Factory Defect Detection — Automated visual inspection system for manufacturing quality control with 99.2% accuracy using YOLOv8 and ONNX.">
+    <meta name="description" content="Factory Defect Detection — Automated visual inspection for manufacturing quality control using YOLOv8, FastAPI, and React.">
     <title>Factory Defect Detection — Project Case Study | Naing Lin Wai</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -60,22 +60,23 @@
             <span>Factory Defect Detection</span>
         </div>
         <h1>Factory <span class="gradient-text">Defect Detection</span></h1>
-        <p class="subtitle">Automated visual inspection system for manufacturing quality control with 99.2% accuracy — reducing defect escape rate by 85%.</p>
+        <p class="subtitle">Automated visual inspection for manufacturing quality control using YOLOv8, FastAPI, and React.</p>
         <div class="project-meta">
-            <div class="project-meta-item"><span>Client</span><span>Precision Manufacturing Co.</span></div>
-            <div class="project-meta-item"><span>Duration</span><span>5 Months</span></div>
-            <div class="project-meta-item"><span>Role</span><span>Lead AI Engineer</span></div>
+            <div class="project-meta-item"><span>Type</span><span>Portfolio Project</span></div>
+            <div class="project-meta-item"><span>Scope</span><span>End-to-End Build</span></div>
+            <div class="project-meta-item"><span>Role</span><span>AI Engineer</span></div>
         </div>
     </div>
 </section>
 
 <section class="project-section">
     <div class="container">
+        <p class="project-note" style="padding:16px 20px;border-left:3px solid var(--color-cyan-accent);background:var(--bg-card);border-radius:8px;margin-bottom:24px;"><i class="fas fa-info-circle"></i> <em>Self-directed portfolio project demonstrating production-grade AI delivery. Not a paid client engagement.</em></p>
         <h2>The Problem</h2>
-        <p>A precision manufacturing facility was experiencing a 3.2% defect escape rate with manual visual inspection — costing approximately $1.2M annually in returns and rework. Human inspectors could only sample 15% of products due to production line speed constraints, and fatigue led to inconsistent quality judgments.</p>
+        <p>Manual visual inspection in manufacturing is slow, inconsistent, and fatigue-prone — human inspectors miss defects and can only sample a fraction of output. This is a classic fit for automated computer-vision inspection.</p>
 
         <h2>The Solution</h2>
-        <p>I developed an automated visual inspection system using YOLOv8 for defect detection and classification, deployed as a Docker-based microservice integrated directly into the production line. The system inspects 100% of products at line speed (120 units/minute) and classifies defects into 12 categories including scratches, dents, misalignments, and surface contamination.</p>
+        <p>I built a full-stack visual inspection platform: YOLOv8 for defect detection, a FastAPI backend with REST endpoints, and a React dashboard for batch uploads and analytics — all containerized with Docker for one-command deployment. The code is open source on GitHub.</p>
 
         <div class="architecture-placeholder">
             <i class="fas fa-project-diagram"></i>
@@ -91,18 +92,18 @@
 
         <h2>Key Challenges</h2>
         <ul>
-            <li><strong>High-Speed Inspection:</strong> Engineered a pipeline that processes 120 units/minute with <100ms inference latency per unit using ONNX-optimized models.</li>
-            <li><strong>Defect Class Imbalance:</strong> Addressed severe class imbalance (some defects occur in <0.1% of units) using focal loss and synthetic data augmentation.</li>
-            <li><strong>Production Integration:</strong> Designed a non-blocking inspection microservice that interfaces with PLC controllers for automatic rejection of defective units.</li>
-            <li><strong>Model Drift Monitoring:</strong> Implemented automated drift detection with weekly model retraining triggers to maintain accuracy as product lines evolve.</li>
+            <li><strong>Detection Accuracy:</strong> Trained and evaluated a YOLOv8 model for multiple defect classes, balancing precision and recall on real-world data.</li>
+            <li><strong>Batch Throughput:</strong> Built a queue-based processing pipeline that handles multiple image uploads without blocking the API.</li>
+            <li><strong>Production Readiness:</strong> Shipped the system as a Dockerized microservice with JWT authentication, Swagger docs, and CI/CD.</li>
+            <li><strong>Observability:</strong> Added an analytics dashboard for defect rates, trends, and class distributions.</li>
         </ul>
 
-        <h2>Results</h2>
+        <h2>Project Highlights</h2>
         <div class="results-grid">
-            <div class="result-card"><span class="result-number">85%</span><span class="result-label">Defect Escape Reduction</span></div>
-            <div class="result-card"><span class="result-number">99.2%</span><span class="result-label">Detection Accuracy</span></div>
-            <div class="result-card"><span class="result-number">120/min</span><span class="result-label">Inspection Speed</span></div>
-            <div class="result-card"><span class="result-number">$1.2M</span><span class="result-label">Annual Savings</span></div>
+            <div class="result-card"><span class="result-number">YOLOv8</span><span class="result-label">Detection Model</span></div>
+            <div class="result-card"><span class="result-number">FastAPI</span><span class="result-label">Backend API</span></div>
+            <div class="result-card"><span class="result-number">React</span><span class="result-label">Dashboard UI</span></div>
+            <div class="result-card"><span class="result-number">Docker</span><span class="result-label">One-Command Deploy</span></div>
         </div>
 
         <div class="project-links-bar">

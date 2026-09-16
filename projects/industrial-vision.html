@@ -62,20 +62,21 @@
         <h1>Industrial <span class="gradient-text">Vision Inspection</span></h1>
         <p class="subtitle">Multi-camera synchronized inspection system for high-speed production lines with real-time defect classification — powered by OpenCV, PyTorch, and ROS2.</p>
         <div class="project-meta">
-            <div class="project-meta-item"><span>Client</span><span>Automotive Parts Manufacturer</span></div>
-            <div class="project-meta-item"><span>Duration</span><span>6 Months</span></div>
-            <div class="project-meta-item"><span>Role</span><span>AI & Robotics Engineer</span></div>
+            <div class="project-meta-item"><span>Type</span><span>Portfolio Project</span></div>
+            <div class="project-meta-item"><span>Scope</span><span>End-to-End Build</span></div>
+            <div class="project-meta-item"><span>Role</span><span>AI Engineer</span></div>
         </div>
     </div>
 </section>
 
 <section class="project-section">
     <div class="container">
+        <p class="project-note" style="padding:16px 20px;border-left:3px solid var(--color-cyan-accent);background:var(--bg-card);border-radius:8px;margin-bottom:24px;"><i class="fas fa-info-circle"></i> <em>Self-directed portfolio project demonstrating production-grade AI delivery. Not a paid client engagement.</em></p>
         <h2>The Problem</h2>
-        <p>An automotive parts manufacturer needed a comprehensive vision inspection system for their high-speed production line producing 200+ parts per minute. Parts required inspection from multiple angles (top, bottom, sides) for dimensional accuracy, surface defects, and assembly correctness. Manual sampling inspection was missing 8% of defects.</p>
+        <p>High-speed production lines need multi-angle inspection for dimensional accuracy, surface defects, and assembly correctness. Manual sampling inspection misses defects and doesn't scale.</p>
 
         <h2>The Solution</h2>
-        <p>I designed and deployed a synchronized 6-camera inspection system orchestrated by ROS2. Each camera station runs optimized PyTorch models for specific defect types. A central ROS2 node aggregates results from all stations, performs multi-view verification, and interfaces with the PLC for real-time rejection of defective parts. The entire system is containerized with Docker for easy deployment and scaling.</p>
+        <p>I designed a synchronized multi-camera inspection system orchestrated by ROS2: each camera station runs PyTorch models for specific defect types, a central node aggregates results across viewpoints, and the system integrates with a PLC for rejection — all containerized with Docker for reproducible deployment.</p>
 
         <div class="architecture-placeholder">
             <i class="fas fa-project-diagram"></i>
@@ -91,18 +92,18 @@
 
         <h2>Key Challenges</h2>
         <ul>
-            <li><strong>Multi-Camera Synchronization:</strong> Implemented hardware-triggered frame capture with microsecond-level synchronization across 6 cameras using PTP (Precision Time Protocol).</li>
-            <li><strong>Real-Time Decision Fusion:</strong> Built a weighted voting system that combines detection results from multiple viewpoints with configurable confidence thresholds.</li>
-            <li><strong>Production Line Integration:</strong> Designed fail-safe communication between the AI system and PLC controllers — any system anomaly triggers immediate line stoppage.</li>
-            <li><strong>Calibration Automation:</strong> Developed an automated calibration routine that aligns all 6 cameras to a common coordinate system in under 2 minutes.</li>
+            <li><strong>Multi-Camera Synchronization:</strong> Hardware-triggered frame capture with synchronized timing across cameras.</li>
+            <li><strong>Real-Time Decision Fusion:</strong> A weighted voting system that combines detection results from multiple viewpoints.</li>
+            <li><strong>Production Line Integration:</strong> Fail-safe communication between the AI system and PLC controllers.</li>
+            <li><strong>Calibration Automation:</strong> An automated routine that aligns cameras to a common coordinate system.</li>
         </ul>
 
-        <h2>Results</h2>
+        <h2>Project Highlights</h2>
         <div class="results-grid">
-            <div class="result-card"><span class="result-number">96%</span><span class="result-label">Defect Detection Rate</span></div>
-            <div class="result-card"><span class="result-number">200/min</span><span class="result-label">Parts Inspected</span></div>
-            <div class="result-card"><span class="result-number">6</span><span class="result-label">Synchronized Cameras</span></div>
-            <div class="result-card"><span class="result-number">$850K</span><span class="result-label">Annual Savings</span></div>
+            <div class="result-card"><span class="result-number">Multi-Cam</span><span class="result-label">Multi-View Inspection</span></div>
+            <div class="result-card"><span class="result-number">ROS2</span><span class="result-label">Orchestration</span></div>
+            <div class="result-card"><span class="result-number">PyTorch</span><span class="result-label">Detection Models</span></div>
+            <div class="result-card"><span class="result-number">Docker</span><span class="result-label">Reproducible Deploy</span></div>
         </div>
 
         <div class="project-links-bar">

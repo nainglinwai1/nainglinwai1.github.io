@@ -62,20 +62,21 @@
         <h1>AI <span class="gradient-text">Document Assistant</span></h1>
         <p class="subtitle">LLM-powered document Q&A system with RAG pipeline for intelligent document understanding, retrieval, and analysis — built with LangChain and Hugging Face.</p>
         <div class="project-meta">
-            <div class="project-meta-item"><span>Client</span><span>Legal Tech Startup</span></div>
-            <div class="project-meta-item"><span>Duration</span><span>2 Months</span></div>
-            <div class="project-meta-item"><span>Role</span><span>NLP/LLM Engineer</span></div>
+            <div class="project-meta-item"><span>Type</span><span>Portfolio Project</span></div>
+            <div class="project-meta-item"><span>Scope</span><span>End-to-End Build</span></div>
+            <div class="project-meta-item"><span>Role</span><span>AI Engineer</span></div>
         </div>
     </div>
 </section>
 
 <section class="project-section">
     <div class="container">
+        <p class="project-note" style="padding:16px 20px;border-left:3px solid var(--color-cyan-accent);background:var(--bg-card);border-radius:8px;margin-bottom:24px;"><i class="fas fa-info-circle"></i> <em>Self-directed portfolio project demonstrating production-grade AI delivery. Not a paid client engagement.</em></p>
         <h2>The Problem</h2>
-        <p>A legal tech startup needed an intelligent document assistant that could ingest thousands of legal documents (contracts, filings, regulations) and answer complex natural language queries with precise citations to source documents. Traditional keyword search was inadequate — users needed semantic understanding across hundreds of pages of dense legal text.</p>
+        <p>Organizations sit on thousands of internal documents — policies, contracts, reports — but can't safely query them with AI. Public LLM APIs risk leaking confidential data, and keyword search misses semantic meaning.</p>
 
         <h2>The Solution</h2>
-        <p>I built a Retrieval-Augmented Generation (RAG) pipeline using LangChain for orchestration, Hugging Face sentence transformers for embeddings, and ChromaDB as the vector store. The system chunks documents intelligently (respecting section boundaries), retrieves the most relevant passages, and generates contextually accurate answers with inline citations using a fine-tuned LLM.</p>
+        <p>I built OpsAI — a self-hosted RAG assistant that runs a local LLM and a private Qdrant vector store, so answers come only from your own documents with source citations. It chunks documents intelligently, retrieves the most relevant passages, and refuses to guess when the knowledge base can't support an answer. The code is open source on GitHub.</p>
 
         <div class="architecture-placeholder">
             <i class="fas fa-project-diagram"></i>
@@ -91,18 +92,18 @@
 
         <h2>Key Challenges</h2>
         <ul>
-            <li><strong>Document Chunking:</strong> Developed a hierarchical chunking strategy that preserves legal document structure — sections, subsections, and clauses — for accurate citation.</li>
-            <li><strong>Retrieval Quality:</strong> Implemented hybrid search (dense + sparse) using BM25 and semantic embeddings, achieving 94% top-5 retrieval accuracy.</li>
-            <li><strong>Hallucination Prevention:</strong> Added a verification layer that cross-references generated answers against retrieved passages to flag unsupported claims.</li>
-            <li><strong>Scalability:</strong> Optimized embedding generation pipeline to process 10,000+ pages in under 30 minutes using batched inference.</li>
+            <li><strong>Document Chunking:</strong> Built a chunking strategy that preserves document structure for accurate citation.</li>
+            <li><strong>Retrieval Quality:</strong> Implemented semantic search over a private Qdrant vector store with citation metadata.</li>
+            <li><strong>Honesty Guard:</strong> Added a verification layer so the assistant refuses to guess when the knowledge base can't support an answer.</li>
+            <li><strong>Privacy:</strong> Runs a local LLM so no documents ever leave your infrastructure.</li>
         </ul>
 
-        <h2>Results</h2>
+        <h2>Project Highlights</h2>
         <div class="results-grid">
-            <div class="result-card"><span class="result-number">94%</span><span class="result-label">Retrieval Accuracy</span></div>
-            <div class="result-card"><span class="result-number">10K+</span><span class="result-label">Documents Indexed</span></div>
-            <div class="result-card"><span class="result-number">&lt;3s</span><span class="result-label">Query Response Time</span></div>
-            <div class="result-card"><span class="result-number">87%</span><span class="result-label">User Satisfaction</span></div>
+            <div class="result-card"><span class="result-number">RAG</span><span class="result-label">Retrieval-Augmented Q&amp;A</span></div>
+            <div class="result-card"><span class="result-number">Qdrant</span><span class="result-label">Vector Store</span></div>
+            <div class="result-card"><span class="result-number">Local LLM</span><span class="result-label">Private Inference</span></div>
+            <div class="result-card"><span class="result-number">Citations</span><span class="result-label">Grounded Answers</span></div>
         </div>
 
         <div class="project-links-bar">

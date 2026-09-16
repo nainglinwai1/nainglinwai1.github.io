@@ -231,13 +231,13 @@
         <p class="subtitle">Real-time anomaly detection and behavior analysis for security surveillance using edge-optimized deep learning on NVIDIA Jetson Orin.</p>
         <div class="project-meta">
             <div class="project-meta-item">
-                <span>Client</span><span>Security Solutions Provider</span>
+                <span>Type</span><span>Portfolio Project</span>
             </div>
             <div class="project-meta-item">
-                <span>Duration</span><span>4 Months</span>
+                <span>Scope</span><span>End-to-End Build</span>
             </div>
             <div class="project-meta-item">
-                <span>Role</span><span>Lead AI Engineer</span>
+                <span>Role</span><span>AI Engineer</span>
             </div>
         </div>
     </div>
@@ -246,11 +246,13 @@
 <section class="project-section">
     <div class="container">
 
+        <p class="project-note" style="padding:16px 20px;border-left:3px solid var(--color-cyan-accent);background:var(--bg-card);border-radius:8px;margin-bottom:24px;"><i class="fas fa-info-circle"></i> <em>Self-directed portfolio project demonstrating production-grade AI delivery. Not a paid client engagement.</em></p>
+
         <h2>The Problem</h2>
-        <p>A security solutions provider needed an intelligent surveillance system that could automatically detect anomalies — intrusions, loitering, unattended objects, and crowd formation — in real-time across hundreds of camera feeds. Traditional rule-based systems generated too many false positives, while cloud-based AI solutions introduced unacceptable latency and bandwidth costs.</p>
+        <p>Security teams are overwhelmed by camera feeds. Rule-based systems generate false alarms, while cloud AI adds latency and bandwidth cost. There is a clear need for on-device anomaly detection that runs where the cameras are.</p>
 
         <h2>The Solution</h2>
-        <p>I designed and deployed an edge-native AI pipeline that runs YOLOv8-based object detection and custom behavior analysis models directly on NVIDIA Jetson Orin devices at each camera cluster. The system processes video streams locally at 30 FPS per camera, only sending alert metadata to the central monitoring dashboard — reducing bandwidth by 95% compared to cloud-based alternatives.</p>
+        <p>I built an edge-native AI pipeline that runs YOLOv8-based detection and behavior analysis directly on NVIDIA Jetson devices at the camera cluster. Video is processed locally and only alert metadata is sent to the central dashboard — no raw footage leaves the site.</p>
 
         <div class="architecture-placeholder">
             <i class="fas fa-project-diagram"></i>
@@ -274,29 +276,29 @@
 
         <h2>Key Challenges</h2>
         <ul>
-            <li><strong>Real-time Performance:</strong> Achieving 30 FPS inference on edge hardware required aggressive model optimization with TensorRT, INT8 quantization, and custom CUDA kernels.</li>
-            <li><strong>False Positive Reduction:</strong> Implemented a multi-frame temporal filtering pipeline that reduced false positives by 92% while maintaining detection sensitivity.</li>
-            <li><strong>Multi-Camera Synchronization:</strong> Developed a time-synchronized frame buffering system to handle up to 16 camera streams per Jetson device.</li>
-            <li><strong>Low-Light Performance:</strong> Fine-tuned models on a custom dataset with night-time augmentation to maintain >95% accuracy in challenging lighting conditions.</li>
+            <li><strong>Real-Time Performance:</strong> Optimized YOLOv8 inference on edge hardware with TensorRT and INT8 quantization.</li>
+            <li><strong>False Positive Reduction:</strong> Applied multi-frame temporal filtering to cut down false alarms while preserving sensitivity.</li>
+            <li><strong>Multi-Camera Handling:</strong> Designed time-synchronized frame buffering to support multiple camera streams per device.</li>
+            <li><strong>Low-Light Performance:</strong> Fine-tuned on a night-augmented dataset to improve detection in poor lighting.</li>
         </ul>
 
-        <h2>Results</h2>
+        <h2>Project Highlights</h2>
         <div class="results-grid">
             <div class="result-card">
-                <span class="result-number">95%</span>
-                <span class="result-label">Bandwidth Reduction</span>
+                <span class="result-number">YOLOv8</span>
+                <span class="result-label">Detection Model</span>
             </div>
             <div class="result-card">
-                <span class="result-number">30 FPS</span>
-                <span class="result-label">Per Camera Inference</span>
+                <span class="result-number">Jetson</span>
+                <span class="result-label">Edge Device</span>
             </div>
             <div class="result-card">
-                <span class="result-number">92%</span>
-                <span class="result-label">False Positive Reduction</span>
+                <span class="result-number">DeepStream</span>
+                <span class="result-label">Video Pipeline</span>
             </div>
             <div class="result-card">
-                <span class="result-number">16</span>
-                <span class="result-label">Cameras per Device</span>
+                <span class="result-number">On-Device</span>
+                <span class="result-label">No Cloud Needed</span>
             </div>
         </div>
 
